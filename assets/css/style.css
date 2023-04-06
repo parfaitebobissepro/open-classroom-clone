@@ -1,4 +1,155 @@
-/** 
+/*** 
     Author: EBOBISSE EPOUNE Parfait
     Date: 04/04/2023
 ***/
+
+
+/** Variables **/
+
+:root {
+    /* app-fonts */
+    --app-font-family: "Inter", "Inter-Regular";
+    --app-font-size: 16px;
+    --app-font-weight: 300;
+    /* app-color */
+    --app-color-primary: #7451eb;
+    --app-color-accent: "";
+    --app-color-gray: "";
+    --app-color-text-primary: #271a38;
+    --app-color-text-accent: #7451eb;
+    --app-color-text-white: "";
+    --app-color-text-gray: rgb(97, 97, 97);
+    --app-color-border-gray-ligth: #dad9dc;
+    --app-color-border-gray-high-ligth: rgba(0, 0, 0, 0.04);
+    --app-color-ligth: #FFF;
+    /* app-background */
+    --app-background-default: #FFF;
+    /* app-border-raduis */
+    --app-border-button-raduis-default: 4px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    display: block;
+    opacity: 1;
+}
+
+body,
+html {
+    font-family: var(--app-font-family);
+    font-weight: var(--app-font-weight);
+    color: var(--app-color-text-primary);
+}
+
+.constraint-box {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-weight: var(--app-font-weight);
+    color: var(--app-color-text-primary);
+    padding: 0.5rem;
+}
+
+.nav-link:is(:not(.outline-link)):hover {
+    color: var(--app-color-text-accent);
+}
+
+.nav-link.outline-link {
+    padding: calc(0.5rem + 1px) 1rem;
+}
+
+.outline-link:hover {
+    background-color: rgba(116, 81, 235, 0.24);
+    border-radius: var(--app-border-button-raduis-default);
+}
+
+.outline-link svg {
+    margin: 0rem 0rem 0rem 0.25rem !important;
+    position: relative;
+    pointer-events: none;
+    vertical-align: middle;
+    user-select: none;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    font-size: 1.5rem;
+}
+
+
+/** links **/
+
+.flat-link {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--app-color-primary);
+}
+
+
+/** buttons **/
+
+.reset-Button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    /* inherit font & color from ancestor */
+    color: inherit;
+    font: inherit;
+    /* Normalize `line-height`. Cannot be changed from `normal` in Firefox 4+. */
+    line-height: normal;
+    /* Corrects font smoothing for webkit */
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    /* Corrects inability to style clickable `input` types in iOS */
+    -webkit-appearance: none;
+}
+
+.event-none {
+    pointer-events: none;
+}
+
+@media (min-width: 768px) {
+    .constraint-box {
+        max-width: 704px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .constraint-box {
+        max-width: 936px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .constraint-box {
+        max-width: 1168px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
