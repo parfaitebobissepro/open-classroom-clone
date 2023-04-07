@@ -85,9 +85,7 @@ header .navbar {
     background-color: #FFF;
     width: 480px;
     z-index: 2;
-    border-radius: var(--app-border-button-raduis-default);
     left: -6px;
-    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.05), 0px 9px 12px 0px rgba(0, 0, 0, 0.05);
     opacity: 0;
     visibility: hidden;
     transform-origin: center bottom;
@@ -188,20 +186,22 @@ header .navbar {
 }
 
 .responsive-menu-button {
-    display: inline-block;
-    text-align: center;
-    flex: 0 0 auto;
-    border-radius: 50%;
-    overflow: visible;
-    color: rgba(0, 0, 0, 0.54);
-    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    padding: 12px;
     margin-left: -0.75rem;
     margin-right: 0.5rem;
 }
 
-.responsive-menu-button:hover {
-    background-color: rgba(0, 0, 0, 0.04);
+.roundedButtonLigthGray {
+    border-radius: 50%;
+    flex: 0 0 auto;
+    overflow: visible;
+    padding: 12px;
+    transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    text-align: center;
+    display: inline-block;
+}
+
+.roundedButtonLigthGray:hover {
+    background-color: var(--app-color-background-gray-high-ligth);
 }
 
 .responsive-menu-button svg {

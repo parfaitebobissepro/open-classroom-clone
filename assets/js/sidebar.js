@@ -1,4 +1,4 @@
-/* Code pour ouvrir/fermer la sidebar */
+/* for open and close the sidebar */
 $('#sidebarCollapse').on('click', function() {
     $('.sidebar').toggleClass('active');
     $('.overlay').toggleClass('active');

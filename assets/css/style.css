@@ -13,6 +13,8 @@
     --app-font-weight: 300;
     /* app-color */
     --app-color-primary: #7451eb;
+    --app-color-primary-opacited: rgba(116, 81, 235, 0.08);
+    --app-color-primary-opacited-ligth: rgba(116, 81, 235, 0.12);
     --app-color-accent: "";
     --app-color-gray: "";
     --app-color-text-primary: #271a38;
@@ -21,7 +23,11 @@
     --app-color-text-gray: rgb(97, 97, 97);
     --app-color-border-gray-ligth: #dad9dc;
     --app-color-border-gray-high-ligth: rgba(0, 0, 0, 0.04);
+    --app-color-border-gray-high-ligth-2: rgba(0, 0, 0, 0.42);
+    --app-color-background-gray-high-ligth: rgba(0, 0, 0, 0.04);
     --app-color-ligth: #FFF;
+    --app-color-purple-dark: rgb(39, 26, 56);
+    --app-color-icon-dark: rgba(0, 0, 0, 0.54);
     /* app-background */
     --app-background-default: #FFF;
     /* app-border-raduis */
@@ -53,6 +59,7 @@ body,
 html {
     font-family: var(--app-font-family);
     font-weight: var(--app-font-weight);
+    font-size: var(--app-font-size);
     color: var(--app-color-text-primary);
 }
 
@@ -128,6 +135,15 @@ html {
 
 .event-none {
     pointer-events: none;
+}
+
+.card-shadow {
+    background-color: rgb(255, 255, 255);
+    color: rgb(39, 26, 56);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 3px 16px 0px, rgba(0, 0, 0, 0.05) 0px 9px 12px 0px;
+    border: none;
 }
 
 @media (min-width: 768px) {
