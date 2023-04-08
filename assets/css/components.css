@@ -1,0 +1,110 @@
+/*** product-card ***/
+
+.product-card {
+    outline: none;
+    width: 722px;
+    max-width: 100%;
+}
+
+.product-card .header {
+    display: flex;
+    align-items: center;
+}
+
+.product-card .header img {
+    width: 30px;
+}
+
+.product-card .icon-container,
+.product-card .title-container {
+    border-bottom: 1px solid var(--app-color-border-gray-ligth);
+}
+
+.product-card .icon-container {
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--app-color-primary);
+}
+
+.product-card .title-container {
+    padding: 1rem 0.5rem;
+    text-transform: uppercase;
+    flex: 1;
+}
+
+.product-card .body {
+    padding: 16px;
+}
+
+.product-card .body ul {
+    list-style: none;
+    padding: 0;
+    margin-block-end: 0;
+}
+
+.product-card .body ul li {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.product-card .body ul li svg {
+    stroke: var(--app-color-primary);
+    top: 0rem;
+    position: relative;
+    margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .product-card .body ul li svg {
+        top: 0.25rem;
+    }
+    .product-card .body ul li {
+        display: inline-flex;
+        align-items: baseline;
+        vertical-align: top;
+        width: 50%;
+    }
+    .product-card .icon-container {
+        padding: 1rem;
+        border-bottom: 1px solid var(--app-color-primary);
+    }
+}
+
+
+/** Carousel nav **/
+
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-nav-sub-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.carousel-nav button {
+    filter: grayscale(90%);
+    opacity: 0.5;
+    min-width: unset;
+    transition: filter 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-bottom: 1px solid var(--app-color-border-gray-ligth);
+    padding: 12px 16px;
+}
+
+.carousel-nav button.active {
+    filter: grayscale(0%);
+}
+
+.carousel-nav img {
+    width: 30px;
+}
+
+.tab-indicator {
+    width: 62px;
+    bottom: 0;
+    height: 1px;
+    background-color: var(--app-color-primary);
+    position: absolute;
+    transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}

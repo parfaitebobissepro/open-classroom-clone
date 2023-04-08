@@ -1,8 +1,6 @@
 header[role="banner"] {
     padding-top: 5px;
     padding-bottom: 5px;
-    padding-left: 1rem;
-    padding-right: 1rem
 }
 
 header[role="banner"] {
@@ -13,7 +11,8 @@ header[role="banner"] {
     z-index: 1100;
 }
 
-header[role="banner"]:not(.sticky):before {
+header[role="banner"]::before {
+    content: "";
     opacity: 0;
 }
 
@@ -23,6 +22,7 @@ header[role="banner"].sticky::before {
     right: 0;
     bottom: 0;
     content: "";
+    opacity: 1;
     position: absolute;
     background: var(--app-background-default);
     transition: opacity 300ms;

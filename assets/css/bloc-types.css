@@ -1,0 +1,86 @@
+/* 
+-------------bloc-type-twins----------------
+Description: bloc with text at left and image at right; 
+Example:homepage first bloc 
+*/
+
+.bloc-type-twins {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bloc-type-twins>.bloc-type-twins-first {
+    margin-right: 2rem;
+}
+
+.bloc-type-twins>.bloc-type-twins-second {
+    max-width: 600px;
+}
+
+@media (min-width: 768px) and (max-width: 1279.95px) {
+    .bloc-type-twins>.bloc-type-twins-second>img {
+        width: 470px;
+    }
+}
+
+@media(max-width: 991.95px) {
+    .bloc-type-twins {
+        flex-direction: column;
+        align-items: start;
+    }
+    .bloc-type-twins>.bloc-type-twins-second {
+        margin-top: 2.5rem;
+        align-self: center;
+    }
+    .bloc-type-twins>.bloc-type-twins-second>img {
+        width: 100%;
+    }
+}
+
+
+/* 
+-------------bloc-type-brands----------------
+Description: bloc that align images inline;
+Example:homepage second bloc 
+*/
+
+.bloc-type-brands ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.bloc-type-brands ul img {
+    height: 30px;
+}
+
+@media (min-width: 1280px) {
+    .bloc-type-brands ul img {
+        height: 45px;
+    }
+}
+
+@media(max-width: 991.95px) {
+    .bloc-type-brands ul li {
+        height: 45px;
+        margin: 1rem;
+    }
+}
+
+
+/* 
+-------------bloc-type-simple----------------
+Description: bloc that have title, small paragraph and the rest;
+Example:homepage third bloc 
+*/
+
+.bloc-type-simple {}

@@ -63,16 +63,27 @@ html {
     color: var(--app-color-text-primary);
 }
 
+
+/** titles **/
+
+h1,
+h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
 .constraint-box {
     margin-left: auto;
     margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .nav-link {
     font-size: 1rem;
     font-weight: var(--app-font-weight);
     color: var(--app-color-text-primary);
-    padding: 0.5rem;
+    padding: 0.75rem;
 }
 
 .nav-link:is(:not(.outline-link)):hover {
@@ -102,6 +113,14 @@ html {
 }
 
 
+/** paragraph **/
+
+p {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+
 /** links **/
 
 .flat-link {
@@ -109,6 +128,13 @@ html {
     font-weight: 700;
     text-transform: uppercase;
     color: var(--app-color-primary);
+}
+
+
+/** bold & strong **/
+
+b {
+    font-weight: 700;
 }
 
 
@@ -146,11 +172,31 @@ html {
     border: none;
 }
 
+.section-default {
+    margin-top: 0.5rem;
+    background: transparent;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
 @media (min-width: 768px) {
     .constraint-box {
         max-width: 704px;
         padding-left: 0;
         padding-right: 0;
+    }
+    h1,
+    h2 {
+        font-size: 2rem;
+        letter-spacing: 0px;
+        line-height: 48px;
+    }
+    .title-type-1 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        line-height: 30px;
+        letter-spacing: 0px;
     }
 }
 
