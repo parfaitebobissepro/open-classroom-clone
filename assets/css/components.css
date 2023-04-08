@@ -108,3 +108,122 @@
     position: absolute;
     transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
+
+
+/*** 
+    Pack Card
+    Require: card-shadow
+ ***/
+
+.pack {
+    display: flex;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0.5rem 0.5rem 1.5rem 0.5rem;
+    border-radius: 8px;
+}
+
+.pack::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: linear-gradient(165deg, #7451eb -16%, #003668 75%);
+}
+
+.pack.active::after {
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 8px;
+    display: block;
+    position: absolute;
+    background: linear-gradient(165deg, #7451eb -16%, #003668 75%);
+}
+
+.pack img {
+    width: 64px;
+    height: 64px;
+    margin: 1rem 0rem;
+    margin-bottom: 1.7rem;
+}
+
+.pack .pack-sub-container {
+    padding: 16px;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.pack .pack-title {
+    margin-bottom: 1.5rem;
+}
+
+.pack .pack-footer-container {
+    align-self: center;
+    margin-top: auto;
+    padding: 8px;
+    padding-top: 1rem;
+}
+
+.pack .pack-sub-container {
+    padding-bottom: 2rem;
+    display: flex;
+}
+
+.pack .badge {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    border-radius: 4px;
+    padding: 0rem 0.25rem;
+    margin-left: 0;
+}
+
+@media (max-width: 767.95px) {
+    .pack.active {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin: 0.5rem 0.5rem 1.5rem 0.5rem;
+        min-height: 265px;
+    }
+    .pack .pack-sub-container {
+        width: 100%;
+    }
+    .pack {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .pack.active {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .pack {
+        width: 216px;
+        min-height: 365px;
+    }
+    .pack.active {
+        flex-grow: 1;
+        max-width: 30%;
+        width: auto;
+        min-height: 365px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .pack {
+        width: 256px;
+    }
+    .pack.active {
+        width: 256px;
+    }
+}

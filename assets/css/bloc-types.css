@@ -84,3 +84,93 @@ Example:homepage third bloc
 */
 
 .bloc-type-simple {}
+
+
+/* 
+-------------bloc-type-packs----------------
+Description: bloc that have inline items like cards, the are responsive;
+Example:homepage fourth bloc 
+*/
+
+.bloc-type-packs {
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 991.95px) {
+    .bloc-type-packs {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .bloc-type-packs>.pack {
+        width: 45%;
+    }
+}
+
+@media (max-width: 767px) {
+    .bloc-type-packs {
+        flex-direction: column;
+        align-items: normal;
+    }
+}
+
+
+/* 
+-------------bloc-type-values----------------
+Description: bloc that have four bloc like a Ludo game, the are responsive;
+Example:homepage fifth bloc 
+*/
+
+.bloc-type-values {}
+
+.bloc-type-values ul {
+    list-style: none;
+    /* padding: 0; */
+}
+
+.bloc-type-values .values-container {
+    margin: 0;
+    display: flex;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 2.5rem;
+}
+
+.bloc-type-values .value>img {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 1.25rem;
+}
+
+.bloc-type-values .title {
+    margin-bottom: 1rem;
+}
+
+.bloc-type-values .content {}
+
+@media (max-width: 767.95px) {
+    .bloc-type-values .title {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .bloc-type-values .value {
+        width: 48%;
+    }
+    .bloc-type-values .title {
+        font-size: 1.125rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .bloc-type-values .value {
+        padding: 0rem 2rem;
+    }
+    .bloc-type-values .title {
+        font-size: 1.125rem;
+    }
+}

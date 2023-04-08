@@ -30,6 +30,7 @@
     --app-color-icon-dark: rgba(0, 0, 0, 0.54);
     /* app-background */
     --app-background-default: #FFF;
+    --app-color-background-gray-ligth: rgb(245, 245, 245);
     /* app-border-raduis */
     --app-border-button-raduis-default: 4px;
 }
@@ -68,6 +69,11 @@ html {
 
 h1,
 h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+h3 {
     font-weight: 700;
     font-size: 1.5rem;
 }
@@ -191,6 +197,9 @@ b {
         font-size: 2rem;
         letter-spacing: 0px;
         line-height: 48px;
+    }
+    h3 {
+        line-height: 36px;
     }
     .title-type-1 {
         font-size: 1.25rem;
