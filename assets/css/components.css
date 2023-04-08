@@ -227,3 +227,64 @@
         width: 256px;
     }
 }
+
+
+/*** 
+    Council-card-type
+    Require: card-shadow
+ ***/
+
+.council-card-type {
+    padding: 2.5rem 2rem;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.council-card-type .btn {
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.council-card-type .strong-paragraph {
+    margin-top: 0;
+}
+
+.council-card-type .strong-paragraph~p {
+    margin-top: 0.5rem;
+    width: 65%;
+}
+
+.council-card-type svg,
+.council-card-type .masked-bloc {
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    margin: 0;
+    z-index: 0;
+    position: absolute;
+}
+
+.council-card-type .masked-bloc {
+    clip-path: url(#mask_1);
+    background: linear-gradient(165deg, #7451eb -16%, #003668 75%);
+    background-size: 200% 100%;
+}
+
+@media (max-width: 479.95px) {
+    .council-card-type {
+        padding-bottom: 10rem;
+    }
+    .council-card-type svg,
+    .council-card-type .masked-bloc {
+        top: initial;
+        width: 100%;
+        bottom: 0;
+        height: 45%;
+    }
+    .council-card-type .strong-paragraph~p {
+        width: 100%;
+    }
+}
