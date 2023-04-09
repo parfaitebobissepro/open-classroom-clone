@@ -10,21 +10,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="/assets/css/sidebar.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap-override.css">
-    <link rel="stylesheet" href="/assets/css/header.css">
-    <link rel="stylesheet" href="/assets/css/footer.css">
-    <link rel="stylesheet" href="/assets/css/ripple.css">
-    <link rel="stylesheet" href="/assets/css/bloc-types.css">
-    <link rel="stylesheet" href="/assets/css/components.css">
-    <link rel="stylesheet" href="/assets/css/home.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap-override.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/ripple.css">
+    <link rel="stylesheet" href="./assets/css/bloc-types.css">
+    <link rel="stylesheet" href="./assets/css/components.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
 
     <title>Document</title>
 </head>
 
-<body>
+
+<body class="loading">
+    <div id="spinner">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
     <!--Header-->
     <header role="banner" class="sticky">
         <div class="constraint-box d-flex justify-content-between">
@@ -147,7 +156,8 @@
                                     </li>
                                     <hr>
                                     <li>
-                                        <a class="flat-link active-ripple" href="javascript:void(0);">Découvrir nos produits</a>
+                                        <a class="flat-link active-ripple" href="javascript:void(0);">Découvrir nos
+                                            produits</a>
                                     </li>
                                 </ul>
                             </li>
@@ -571,7 +581,8 @@
                                 allowfullscreen></iframe>
                         </div>
                         <div class="bloc-type-twins-second">
-                            <p> Avec le programme LevelUp! OpenClassrooms propose 100 bourses pour les travailleurs indépendants travaillant pour des plateformes numériques comme Uber, Deliveroo, Stuart.</p>
+                            <p> Avec le programme LevelUp! OpenClassrooms propose 100 bourses pour les travailleurs indépendants travaillant pour des plateformes numériques comme Uber, Deliveroo, Stuart.
+                            </p>
                             <p>OpenClassrooms a reçu en 2019 le <b>"Tech for Good Award" pour la catégorie "Accès au
                                     Numérique".</b></p>
                         </div>
@@ -581,12 +592,21 @@
                     <div class="council-card-type card-shadow ">
                         <div>
                             <p class="strong-paragraph">Discutez avec nos conseillers</p>
-                            <p>Nos spécialistes sont à votre écoute pour vous aider à révéler le talent de vos équipes.</p>
-                            <a class="btn btn-primary pack-button" href="javascript:void(0);">Demander plus d'informations</a>
+                            <p>Nos spécialistes sont à votre écoute pour vous aider à révéler le talent de vos équipes.
+                            </p>
+                            <a class="btn btn-primary pack-button" href="javascript:void(0);">Demander plus
+                                d'informations</a>
                         </div>
                         <div>
                             <div class="masked-bloc" aria-hidden="true"></div>
-                            <svg preserveAspectRatio="none" viewBox="0 0 100 100" aria-hidden="true" class="webapp-0-webapp229" style="pointer-events: none;"><defs><clipPath id="mask_1" clipPathUnits="objectBoundingBox" transform="scale(0.01 0.01)"><path d="M0,100 C30,40 40,80 80,0 L100,0 100,100"></path></clipPath></defs></svg>
+                            <svg preserveAspectRatio="none" viewBox="0 0 100 100" aria-hidden="true" class="webapp-0-webapp229" style="pointer-events: none;">
+                                <defs>
+                                    <clipPath id="mask_1" clipPathUnits="objectBoundingBox"
+                                        transform="scale(0.01 0.01)">
+                                        <path d="M0,100 C30,40 40,80 80,0 L100,0 100,100"></path>
+                                    </clipPath>
+                                </defs>
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -795,11 +815,13 @@
         <nav class="sidebar-nav">
             <ul class="navbar-nav mr-auto header-navbar-nav-mobile">
                 <li class="nav-item">
-                    <a class="nav-link active-ripple" href="javascript:void(0);"><span class="event-none">Nous contacter</span></a>
+                    <a class="nav-link active-ripple" href="javascript:void(0);"><span class="event-none">Nous
+                            contacter</span></a>
                 </li>
                 <hr>
                 <li class="nav-item">
-                    <a class="nav-link active-ripple" href="javascript:void(0);"><span class="event-none">Vos challenges</span></a>
+                    <a class="nav-link active-ripple" href="javascript:void(0);"><span class="event-none">Vos
+                            challenges</span></a>
                 </li>
                 <hr>
                 <li class="nav-item">
@@ -870,24 +892,27 @@
                 </li>
                 <hr>
                 <li class="nav-item">
-                    <a class="nav-link active-ripple" href="javascript:void(0);"><span class="event-none">Espace étudiants</span> </a>
+                    <a class="nav-link active-ripple" href="javascript:void(0);"><span class="event-none">Espace
+                            étudiants</span> </a>
                 </li>
             </ul>
         </nav>
     </div>
+
 </body>
 
+<script src="./assets/js/spinner.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous">
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous">
 </script>
-<script src="/assets/js/main.js"></script>
-<script src="/assets/js/sidebar.js"></script>
-<script src="/assets/js/header.js"></script>
-<script src="/assets/js/footer.js"></script>
-<script src="/assets/js/ripple.js"></script>
-<script src="/assets/js/home.js"></script>
+<script src="./assets/js/main.js"></script>
+<script src="./assets/js/sidebar.js"></script>
+<script src="./assets/js/header.js"></script>
+<script src="./assets/js/footer.js"></script>
+<script src="./assets/js/ripple.js"></script>
+<script src="./assets/js/home.js"></script>
 
 </html>
