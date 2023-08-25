@@ -1,6 +1,7 @@
 # open-classroom-clone
 OpenClassrooms products companies page clone using html5 & css3 full responsive.
 
+Page deployed: https://parfaitebobissepro.github.io/open-classroom-clone
 Page cloned: https://openclassrooms.com/fr/business/products
 
 # screenshots
